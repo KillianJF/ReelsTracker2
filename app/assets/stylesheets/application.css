@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+  font-family: 'Roboto Slab', serif;
+
+}
+
+ body {
+  background-image : url(../../assets/images/background.jpg);
+  background-repeat: no-repeat, repeat;
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Oleo Script', cursive;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.navbar {
+  position:sticky;
+  top: 0;
+  background: white;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: solid rgba(128, 128, 128,0.1 );
+}
+
+.right-nav {
+  display:flex;
+  justify-content: space-around;
+}
+.filter-box {
+  padding:20px;
+  position:fixed;
+  border: solid rgba(128, 128, 128,0.1 );
+  background: white;
+  width:20%;
+  height:100%;
+}

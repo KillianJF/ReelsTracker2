@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @trend.label %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @trend.description %>
+</p>
+
+<p>
+  <strong>Domain:</strong>
+  <%= @trend.domain %>
+</p>
+
+<p>
+  <strong>Example:</strong>
+  <%= @trend.example %>
+</p>
+
+<p>
+  <strong>Started date:</strong>
+  <%= @trend.started_date %>
+</p>
+
+<p>
+  <strong>Posting date:</strong>
+  <%= @trend.posting_date %>
+</p>
+
+<p>
+  <strong>Virality:</strong>
+  <%= @trend.virality %>
+</p>
+
+<p>
+  <strong>Ideas:</strong>
+  <%= @trend.ideas %>
+</p>
+
+<%= link_to 'Edit', edit_trend_path(@trend) %> |
+<%= link_to 'Back', trends_path %>

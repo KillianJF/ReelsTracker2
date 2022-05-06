@@ -1,0 +1,57 @@
+<%= form_with(model: trend) do |form| %>
+  <% if trend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trend.errors.count, "error") %> prohibited this trend from being saved:</h2>
+
+      <ul>
+        <% trend.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :label %>
+    <%= form.text_field :label %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :domain %>
+    <%= form.text_field :domain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :example %>
+    <%= form.text_area :example %>
+  </div>
+
+  <div class="field">
+    <%= form.label :started_date %>
+    <%= form.date_select :started_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :posting_date %>
+    <%= form.date_select :posting_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :virality %>
+    <%= form.number_field :virality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ideas %>
+    <%= form.text_area :ideas %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
