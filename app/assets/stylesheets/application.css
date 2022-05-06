@@ -19,36 +19,55 @@
 }
 
  body {
-  background-image : url(../../assets/images/background.jpg);
+  top:0;
+  background-image : url(./images/background.jpg);
   background-repeat: no-repeat, repeat;
+  background-size: cover;
   margin: 0;
+  margin-top:-20px;
   padding: 0;
 }
 p{
   font-family: 'Roboto Slab', serif;
+  font-size: 18px;
 }
 
 h1 {
   font-size: 50px;
   font-family: 'Oleo Script', cursive;
+  margin:10px;
 }
 
 h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 30px;
+}
+
+.sub-body {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
 .navbar {
   position:sticky;
-  top: 0;
-  background: white;
+  top: -10px;
+  background: rgba(256, 256, 256,0.8 );
   display:flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: solid rgba(128, 128, 128,0.1 );
 }
 
 .right-nav {
   display:flex;
   justify-content: space-around;
+  align-items: center;
+  width: 10%;
 }
 .filter-box {
   padding:20px;
@@ -57,4 +76,12 @@ h2 {
   background: white;
   width:20%;
   height:100%;
+}
+
+
+.cards-domain {
+  background-color: rgba(128,128,128,0.3);
+  display:table;
+  padding:10px;
+  border-radius:40px;
 }

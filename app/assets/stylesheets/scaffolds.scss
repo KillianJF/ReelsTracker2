@@ -1,27 +1,13 @@
-body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px; }
-
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px; }
-
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px; }
-
 a {
+
   color: #000; }
 
-a:visited {
-  color: #666; }
-
 a:hover {
-  color: #fff;
-  background-color: #000; }
+  color:#E1306C;
+  transition-duration: 0.2s;
+
+
+}
 
 th {
   padding-bottom: 5px; }
@@ -31,6 +17,7 @@ td {
 
 div.field,
 div.actions {
+  text-align:center;
   margin-bottom: 10px; }
 
 #notice {
@@ -62,4 +49,43 @@ div.actions {
   list-style: square; }
 
 label {
-  display: block; }
+  display:flex;
+  flex-direction: column;
+ }
+
+
+textarea {
+  width: 20%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+ }
+
+ input[type=text]  {
+  font-family:'roboto-slab';
+  width: 20%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+ }
+
+
+ input[type=submit]  {
+  color:#fff;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background:linear-gradient(45deg,#C13584,#E1306C);
+  font-size: 16px;
+  resize: none;
+ }
